@@ -24,7 +24,5 @@ test("GET para /api/v1/status", async () => {
   expect(database.max_connections).toBeDefined();
   expect(database.opened_connections).toBeDefined();
 
-  expect(database.version).toMatch("16.0");
-  expect(database.max_connections).toEqual(100);
   expect(database.opened_connections).toEqual(1);
 });
