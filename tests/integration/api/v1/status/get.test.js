@@ -17,7 +17,7 @@ test("GET para /api/v1/status", async () => {
   expect(dependencies).toBeDefined();
 
   //database
-  database = dependencies.database;
+  const database = dependencies.database;
   expect(database).toBeDefined();
 
   expect(database.version).toBeDefined();
